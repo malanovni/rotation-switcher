@@ -1,0 +1,5 @@
+{
+  "name": "Skill Switcher",
+  "description": "A minimalist skill rotation tool with adjustable team size and skill levels.",
+  "requestFramePermissions": []
+}
