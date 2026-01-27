@@ -1,20 +1,16 @@
 
-import { TeamMember, SkillLevel } from './types';
+export const DEFAULT_PARTICIPANTS = 4;
+export const DEFAULT_GROUP_SIZE = 2;
 
-export const BASE_MEMBERS: TeamMember[] = [
-  { id: '1', name: 'Alyssa' },
-  { id: '2', name: 'Rami' },
-  { id: '3', name: 'David' },
-  { id: '4', name: 'Chloe' }
-];
+export const THEME_COLORS = {
+  primary: 'indigo',
+  accent: 'emerald',
+  background: 'slate'
+};
 
-export const EXTRA_MEMBER: TeamMember = { id: '5', name: 'Tin/Nikita' };
-
-export const SKILL_COLORS: Partial<Record<SkillLevel, string>> = {
-  'Beginner': 'bg-emerald-100 text-emerald-700 border-emerald-200',
-  'Lower-Intermediate': 'bg-blue-100 text-blue-700 border-blue-200',
-  'Middle-Intermediate': 'bg-sky-100 text-sky-700 border-sky-200',
-  'Upper-Intermediate': 'bg-indigo-100 text-indigo-700 border-indigo-200',
-  'Intermediate': 'bg-slate-100 text-slate-700 border-slate-200',
-  'Advanced': 'bg-purple-100 text-purple-700 border-purple-200'
+// Add SKILL_COLORS mapping for the SkillBadge component styling
+export const SKILL_COLORS: Record<string, string> = {
+  Beginner: 'bg-emerald-50 text-emerald-700 border-emerald-200',
+  Intermediate: 'bg-sky-50 text-sky-700 border-sky-200',
+  Advanced: 'bg-rose-50 text-rose-700 border-rose-200'
 };

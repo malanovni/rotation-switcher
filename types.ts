@@ -1,7 +1,15 @@
 
-export type SkillLevel = 'Beginner' | 'Lower-Intermediate' | 'Middle-Intermediate' | 'Upper-Intermediate' | 'Intermediate' | 'Advanced';
+// Add SkillLevel type used by the SkillBadge component
+export type SkillLevel = 'Beginner' | 'Intermediate' | 'Advanced';
 
-export interface TeamMember {
+export interface Group {
   id: string;
-  name: string;
+  members: number[];
+}
+
+export interface ShuffleRound {
+  id: string;
+  timestamp: Date;
+  participantCount: number;
+  groups: Group[];
 }
